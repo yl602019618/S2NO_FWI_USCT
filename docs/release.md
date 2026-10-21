@@ -48,6 +48,12 @@ fixtures. Original geometry and masks were compared element by element. These
 are implementation checks, not a repetition of the paper's full training or
 quantitative reconstruction experiments.
 
+Both CUDA solver routes also completed a 250 kHz stage with one NCG iteration
+using the external limb sample 12 assets on NVIDIA H100 GPUs (PyTorch 2.5.1).
+CBS and S2NO each produced a finite 480 × 480 sound-speed map. This checks
+end-to-end execution, including the real checkpoint, rather than reconstruction
+quality or speed over the full frequency schedule.
+
 The [training](training.md), [inference](inference.md), and [FWI](fwi.md) guides
 describe the external inputs needed for larger experiments. MIT applies to the
 code in this repository; consult the respective sources for dataset terms.

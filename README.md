@@ -30,11 +30,16 @@
 
 ## Showcase
 
-<p align="center">
-  <a href="https://ai4scientificimaging.org/OpenWaves/video/video1.mp4">
-    <img src="https://ai4scientificimaging.org/OpenWaves/image/fig6_results.png" alt="In vivo 3D ultrasound reconstructions of arms and legs, with MRI and conventional reconstruction comparisons" width="100%">
-  </a>
-</p>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://ai4scientificimaging.org/OpenWaves/video/video1.mp4"><img src="docs/assets/video-1.svg" alt="Play reconstruction video 01 on OpenWaves" width="100%"></a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://ai4scientificimaging.org/OpenWaves/video/video2.mp4"><img src="docs/assets/video-2.svg" alt="Play reconstruction video 02 on OpenWaves" width="100%"></a>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <b>In vivo 3D ultrasound tomography of arms and legs</b><br>
@@ -45,7 +50,7 @@
   <a href="https://ai4scientificimaging.org/OpenWaves/#results">View all results</a>
 </p>
 
-The figure and videos are hosted on the project website. The video links open playable MP4 files; the figure above is a static preview.
+Select either card to play the corresponding MP4 video hosted on the official project website.
 
 ## Overview
 
