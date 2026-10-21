@@ -1,0 +1,9 @@
+# Install an appropriate PyTorch build for your CUDA driver first.
+torch>=2.5,<2.7
+pytorch-lightning>=2.5,<2.6
+numpy>=1.26,<3
+scipy>=1.13,<2
+PyYAML>=6,<7
+matplotlib>=3.8,<4
+pandas>=2.2,<3
+sympy>=1.13,<2

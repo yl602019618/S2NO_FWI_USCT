@@ -1,0 +1,38 @@
+# Original limb sample 12 protocol from inversion/limb_small/cbs/configs/config12.yaml.
+sample: 12
+frequencies_khz:
+  - [250, 300, 350, 400, 450, 500, 550, 600]
+  - [250, 300, 350, 400, 450, 500, 550, 600]
+model_smoothing:
+  - [2, 2, 2, 2, 2, 2, 2, 8]
+  - [0, 0, 0, 0, 0, 0, 0, 0]
+gradient_smoothing:
+  - [5, 5, 5, 5, 3, 3, 3, 3]
+  - [2, 2, 2, 2, 2, 2, 2, 2]
+initial_model:
+  center: [240, 240]
+  radius: 140
+  speed_m_s: 1640
+roi:
+  center: [240, 240]
+  radii: [128, 180]
+max_iterations: 7
+max_line_search_evaluations: 8
+paths:
+  observations: observations/{frequency}k/test_{sample}.npy
+  observation_key: data
+  homogeneous: homogeneous/homo{frequency}.mat
+  homogeneous_key: u_all_single
+  checkpoint: '{frequency}k/*.ckpt'
+s2no:
+  padding: 6
+  add_term: false
+  batch_size: 32
+cbs:
+  PPW: 8
+  lamb: 1
+  energy_threshold: 1.0e-5
+  Bornmax: 1000
+  boundary_widths: 20
+  freq: 5
+  dh: 50

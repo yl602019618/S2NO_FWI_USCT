@@ -1,0 +1,80 @@
+Project:
+  accelerator: gpu
+  checkpoint: false
+  ckpt_path: ''
+  devices: 4
+  do: train
+  erase: false
+  experiment: FNO
+  name: FNO
+  save: false
+  save_top_k: 50
+ckpt:
+  PATH: outputs/training
+  alias: fno
+  save_dir: FNO_500k_20_7_128_pretrain_final
+data:
+  # Relative paths are resolved beneath --data-root or S2NO_DATA_ROOT.
+  root: datasets
+  speed_path_breast: resources/exp_speed/breast0718.mat
+  speed_path_arm: resources/exp_speed/armcbs1022.mat
+  speed_path_limb: resources/exp_speed/limb0718.mat
+  PATH_data_test_arm: arm_data/speed/test
+  PATH_data_test_breast: breast_data/speed/test
+  PATH_data_test_limb: limb_data/speed/test
+  PATH_data_train_arm: arm_data/speed/train
+  PATH_data_train_breast: breast_data/speed/train
+  PATH_data_train_limb: limb_data/speed/train
+  PATH_target_test_arm: arm_data/500k/test
+  PATH_target_test_breast: breast_data/500k/test
+  PATH_target_test_limb: limb_data/500k/test
+  PATH_target_train_arm: arm_data/500k/train
+  PATH_target_train_breast: breast_data/500k/train
+  PATH_target_train_limb: limb_data/500k/train
+  batch: 10
+  exp: multi
+  frequency: 5
+  gt_path_arm: resources/exp_field/arm/experimental500.mat
+  gt_path_breast: resources/exp_field/breast/experimental500.mat
+  gt_path_limb: resources/exp_field/limb/experimental500.mat
+  load_workers: 10
+  size: 480
+  src_path_arm: arm_data/500k/train/train_7154.npy
+  src_path_breast: breast_data/500k/train/train_7201.npy
+  src_path_limb: limb_data/500k/train/train_6894.npy
+  train_num_arm: 7163
+  train_num_breast: 7210
+  train_num_limb: 6903
+  u_homo_path_arm: arm_data/500k/train/train_7154.npy
+  u_homo_path_breast: breast_data/500k/train/train_7201.npy
+  u_homo_path_limb: limb_data/500k/train/train_6894.npy
+  valid_num_arm: 373
+  valid_num_breast: 320
+  valid_num_limb: 108
+model:
+  # Optional diagnostics require experimental MAT files (see docs/training.md).
+  val_exp: false
+  features: 20
+  loss: rel_l2
+  name: FNO_pretrain
+  padding: 6
+  source_type: theta
+  wavenumber:
+  - 128
+  - 128
+  - 128
+  - 128
+  - 128
+  - 128
+  - 128
+  with_grid: true
+train:
+  F_feature: false
+  add_term: false
+  batchsize: 10
+  epochs: 50
+  eta_min: 0.0002
+  gamma: 0.5
+  lr: 0.005
+  step_size: 10
+  weight_decay: 1.0e-05

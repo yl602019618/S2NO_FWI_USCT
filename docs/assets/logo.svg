@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">S²NO</title>
+  <desc id="desc">A wave travels through concentric acoustic contours inside a circular ultrasound transducer array.</desc>
+  <defs>
+    <linearGradient id="field" x1="22" y1="20" x2="218" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102C48"/>
+      <stop offset="1" stop-color="#071624"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="39" y1="120" x2="201" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DE0D3"/>
+      <stop offset="0.48" stop-color="#B9F8E8"/>
+      <stop offset="1" stop-color="#69B8FF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="48" y1="48" x2="192" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#77E2D7"/>
+      <stop offset="1" stop-color="#4F94D1"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="232" height="232" rx="58" fill="url(#field)"/>
+  <rect x="4.75" y="4.75" width="230.5" height="230.5" rx="57.25" fill="none" stroke="#387184" stroke-opacity=".28" stroke-width="1.5"/>
+  <g fill="none" stroke="#71B9C8">
+    <circle cx="120" cy="120" r="27" stroke-opacity=".15" stroke-width="1.5"/>
+    <circle cx="120" cy="120" r="44" stroke-opacity=".19" stroke-width="1.5"/>
+    <circle cx="120" cy="120" r="61" stroke-opacity=".23" stroke-width="1.5"/>
+  </g>
+  <circle cx="120" cy="120" r="83" fill="none" stroke="url(#ring)" stroke-width="5.5" stroke-dasharray="3 13.297" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="73" fill="none" stroke="#77D8D5" stroke-opacity=".19" stroke-width="1"/>
+  <path d="M39 120H62C70 120 74 104 80 104S89 137 97 137 108 77 119 77 130 163 141 163 151 104 159 104 169 120 178 120H201" fill="none" stroke="#071624" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 120H62C70 120 74 104 80 104S89 137 97 137 108 77 119 77 130 163 141 163 151 104 159 104 169 120 178 120H201" fill="none" stroke="url(#wave)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="39" cy="120" r="5" fill="#8AE8DA"/>
+  <circle cx="201" cy="120" r="5" fill="#78C4FF"/>
+</svg>

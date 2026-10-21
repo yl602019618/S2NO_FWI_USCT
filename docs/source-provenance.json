@@ -1,0 +1,147 @@
+{
+  "training_archive": {
+    "name": "S2NO_main_clean.tar.gz",
+    "sha256": "73e6a1b02cf9d6b51ff44deb03ef14a2f02374c6e20f23a84e1e5edc6fed6797"
+  },
+  "training_source_files": [
+    {
+      "path": "S2NO_main/main_pretrain.py",
+      "sha256": "8f87714f89dea5662b7079dd326cbb921c3d76ed0c7bc7099230cea2893598b6"
+    },
+    {
+      "path": "S2NO_main/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "S2NO_main/utils/loss.py",
+      "sha256": "5c1ce60077284cd392409079565ba0132baed590184cb58698f9ab4c284498c5"
+    },
+    {
+      "path": "S2NO_main/utils/visual_loss_curve_pretrain.py",
+      "sha256": "4b099470f6bcc7b8adf406a2745860f3edc919b18b3be796d30460b4de593681"
+    },
+    {
+      "path": "S2NO_main/utils/model_select.py",
+      "sha256": "dca444173437b2036b0caa3c3ea9b5051570b2e966daf618dffd39030f4629ec"
+    },
+    {
+      "path": "S2NO_main/models/unet_pretrain.py",
+      "sha256": "6cc0e05ed6b87b4c49940fc725e965040d095c852f25542d77987ef9b4f14998"
+    },
+    {
+      "path": "S2NO_main/models/basics_model.py",
+      "sha256": "ef741a89836343d2e926d942e897eade66d7a5bbf4b9e263ccbe2d6b5c7e2e43"
+    },
+    {
+      "path": "S2NO_main/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "S2NO_main/models/s2no_pretrain.py",
+      "sha256": "cb1a4900303cb6666a71a7006a993c815473510ba6a1c61ebe5e5b1584601c7f"
+    },
+    {
+      "path": "S2NO_main/models/fno_pretrain.py",
+      "sha256": "a83d3d5062d59fae380ee4e02051ce038a46ec6ca1d3605d6641da3b583ad18e"
+    },
+    {
+      "path": "S2NO_main/models/bfno_pretrain.py",
+      "sha256": "5437a44e8c50b88893d0957e68416bc2d30e85260b6de084fa604eb9ecb105db"
+    },
+    {
+      "path": "S2NO_main/configs/unet_500k.yaml",
+      "sha256": "94df23ae334ac9da1411b8f0c913b0c7066d65879b4a671cc0c19fcc485f6ab2"
+    },
+    {
+      "path": "S2NO_main/configs/s2no_500k_20_7_128.yaml",
+      "sha256": "9e4e8515a7e7aee624f216d365ac0cdeac1e1589128c7a6113a4166be20cbce6"
+    },
+    {
+      "path": "S2NO_main/configs/bfno_500k_20_7_128.yaml",
+      "sha256": "96aff5ae851ce7cacbef11f854c99ee815fcdb1bbeef7ab785dd52dc4802361e"
+    },
+    {
+      "path": "S2NO_main/configs/fno_500k_20_7_128.yaml",
+      "sha256": "2cae1d257b438a167c5c49a0690e69ea6e22345e2252a2b62c8f1f2ffa333e93"
+    },
+    {
+      "path": "S2NO_main/README.md",
+      "sha256": "88bb43000b968ec6fa290098a423b8f3354b088e55bff8728bf67efa751bbdd3"
+    },
+    {
+      "path": "S2NO_main/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "S2NO_main/data/iter_pretrain.py",
+      "sha256": "b6c8ab637bfed787d0ee2c4aab444c94d28441d1b8b7ead70c71f1980d804458"
+    },
+    {
+      "path": "S2NO_main/scripts/train_fno_500k.sh",
+      "sha256": "030d5af7aeafe85986e753c5b474602d9a2f500373421eef7aa67d28b33b08ca"
+    },
+    {
+      "path": "S2NO_main/scripts/train_unet_500k.sh",
+      "sha256": "98d70ba9cb7a7884b2968afc104ffb852c932db396cb84720fbc4f5dbc03549b"
+    },
+    {
+      "path": "S2NO_main/scripts/train_bfno_500k.sh",
+      "sha256": "c737f17575a7625d747a48c275aaecd6e3c43a7b3db33f3b69fae9882b6fffc9"
+    },
+    {
+      "path": "S2NO_main/scripts/train_s2no_500k.sh",
+      "sha256": "1dc612fa6a0113e3a328e87de69e04d876b7145c126bc87b8bc882aa06f8a1b5"
+    }
+  ],
+  "fwi_source_files": [
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/params/param_arm.mat",
+      "sha256": "4273edcb3ee6eefbe73741c07bdd09cd257bf66d6a29483d7c60ffbc1d6ec999"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/main_cal_all_compile_S2NO.py",
+      "sha256": "2c59f65963e04b25d3e1bf08ccf52a4cf5e32330439311f9058ad9a136b83daa"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/Optimizer_ncg_utils.py",
+      "sha256": "1b6261a6c384a94caf470dad83baef6343dec0884b333ae40d33107dcd778267"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/inference_pretrain.py",
+      "sha256": "3f91875c5de06e1ed97484f7a2114e7094b7543dba70366223fbac2d5a53798b"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/cal_fcost_grad.py",
+      "sha256": "3f292b29f18b8dd444b9089281b1bf9455bce1700d0bc6d3be7f67bb88965e48"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/main_cal_all_CBS.py",
+      "sha256": "3dda60b88e19cc98f2dba461856e2a71ac736e8070a989de999d8675c559de31"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/gauss.py",
+      "sha256": "d602944c145de091d42220c2308b29b5ba34ab21908310914781d3bb260d95ff"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/cal_fcost_grad_cbs.py",
+      "sha256": "06fbe770c8e947d423d241294cde9a5e316db80e9dc632ef06964c98c4d06297"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/source_estimation_cbs.py",
+      "sha256": "0a7c6d0723781cee46d310c8099798db887eceed51d5d28557579ae96a6f35e8"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/source_estimation.py",
+      "sha256": "2f1c13f834cab2ee69d38e0846f5302c5f355813cbc9e4b303c1adf693b856c1"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/arm_small/utils/CBS_utils.py",
+      "sha256": "dbf2668740dd85f778ea33381d9029eef4a536da0aa8dc2d6b70523a3f1f6918"
+    },
+    {
+      "path": "USCT_S2NO_FWI_Phantom_main/inversion/limb_small/cbs/configs/config12.yaml",
+      "sha256": "90f370361b97e06df62c384c979d6a7b8e5b3c7c092c117856cfbcae6a9cf862"
+    }
+  ],
+  "note": "Hashes identify the original source snapshots used for the release, before the portability changes described in the workflow guides. Large archives and binary geometry files are not included."
+}

@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper in preferred-citation."
+type: software
+title: "S²NO: Ultrasound Tomography with Generative Neural Physics"
+authors:
+  - name: "S²NO contributors"
+repository-code: "https://github.com/yl602019618/S2NO_FWI_USCT"
+url: "https://ai4scientificimaging.org/OpenWaves/"
+preferred-citation:
+  type: article
+  title: "Ultrasound Tomography of Musculoskeletal Tissues with Generative Neural Physics"
+  authors:
+    - family-names: Zeng
+      given-names: Zhijun
+    - family-names: Zheng
+      given-names: Youjia
+    - family-names: Su
+      given-names: Chang
+    - family-names: Wu
+      given-names: Qianhang
+    - family-names: Hu
+      given-names: Hao
+    - family-names: Dong
+      given-names: Zeyuan
+    - family-names: Lv
+      given-names: Yang
+    - family-names: Cui
+      given-names: Ligang
+    - family-names: Hou
+      given-names: Zhiyong
+    - family-names: Lin
+      given-names: Weijun
+    - family-names: Shi
+      given-names: Zuoqiang
+    - family-names: Li
+      given-names: Yubing
+    - family-names: Sun
+      given-names: He
+  journal: arXiv
+  year: 2026
+  doi: "10.48550/arXiv.2508.12226"
+  url: "https://arxiv.org/abs/2508.12226"
